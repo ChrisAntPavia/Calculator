@@ -1,0 +1,64 @@
+/* CSS for the calculator, CSS is the style for the HTML 
+you use raw html for the bare bones display then you can design the look and feel with CSS using the boxes from html */
+
+body{
+    margin: 0;
+    display: flex; /* flexbox layout to center the calculator */
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    height: 100vh; /* full viewport height so that alignItems works */
+    background-color: hsl(0, 0%, 95%);
+}
+
+#calculator{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px; /* rounded corners */
+    max-width: 500px;
+    overflow: hidden; /* to hide any content that overflows the display */
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width using reapeat() a function to duplicate a pattern of grid tracks cols or rows, 1fr is fractional unit meaning each col should take up a fractional ampunt of space */
+    gap: 10px; /* gap between the rows */
+    padding: 25px; /* padding around the keys */
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;  
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%); /* hover effect for buttons using :hover which applies this style when user hovers over the button */
+}
+button:active{
+    background-color: hsl(0, 0%, 50%); /* active effect for buttons using :active which applies this style when user clicks on the button */
+}
+
+.operator-btn{
+    background-color: hsl(33, 100%, 55%);
+}
+.operator-btn:hover{
+    background-color: hsl(33, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(33, 100%, 45%);
+}
