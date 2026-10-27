@@ -1,2 +1,2 @@
 # Calculator
-Simple Calculator project
+Simple Calculator project utilizing html, CSS, and Javascript
